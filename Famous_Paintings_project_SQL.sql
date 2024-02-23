@@ -53,18 +53,20 @@ FROM artist
 ORDER BY Total_Style DESC, nationality, full_name; 
   
 
-# Find name of picture, artist and style of big paintings above size_id 7000. Show max size for each painting. Include name of artist, painting and style:
+# What are the largest paintings? Find name of picture, artist and style of big paintings above size_id 8000. Show max size for each painting. Include name of artist, painting and style:
 
 SELECT 
     MAX(product_size.size_id) AS Max_size_painting,
     work.name AS work_name,
     work.style,
+    product_size.regular_price,
     artist.full_name as Artist_name
 FROM product_size 
 JOIN work ON product_size.work_id = work.work_id
 JOIN artist ON work.artist_id = artist.artist_id
-GROUP BY work.name, artist.full_name, work.style
-HAVING MAX(product_size.size_id) >= 7000;
+GROUP BY work.name, artist.full_name, work.style, product_size.regular_price
+HAVING MAX(product_size.size_id) >= 8000
+ORDER BY Max_size_painting DESC;
 
 
 
@@ -98,7 +100,7 @@ JOIN work
   ON product_size.work_id = work.work_id
 WHERE sale_price < regular_price * 0.50;
 
-# What are the 10 most most expensive paintings at regular price? Include style and name of artist
+# What are the 10 most most expensive paintings at regular price? Include style and name of artist:
 
 SELECT
     product_size.regular_price,
@@ -185,3 +187,18 @@ WHERE museum.country = 'USA'
 GROUP BY work.style
 ORDER BY style_count DESC
 LIMIT 5;
+
+# What are the most represented subjects by American artists?
+
+SELECT 
+    subject.subject,
+    artist.nationality,
+    COUNT(subject.subject) AS subject_count
+FROM subject
+JOIN work ON subject.work_id = work.work_id
+JOIN artist ON work.artist_id = artist.artist_id
+WHERE artist.nationality = 'American'
+GROUP BY subject.subject
+ORDER BY subject_count DESC
+LIMIT 5;
+
