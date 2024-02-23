@@ -1,10 +1,10 @@
 ## Famous Paintings Data Tables, Project in MySQL
 
-In this project, I used the data "Famous Paintings" downloaded from Kaggle (https://www.kaggle.com/datasets/mexwell/famous-paintings) to practise my SQL skills in MySQL. 
+#In this project, I used the data "Famous Paintings" downloaded from Kaggle (https://www.kaggle.com/datasets/mexwell/famous-paintings) to practise my SQL skills in MySQL. 
 
-I utilised Python to upload the data to the Database in MySQL efficiently. See own deposit for code. 
+#Python was to upload the data to the Database in MySQL efficiently. See own deposit for code. 
 
-In this small project, I looked at the artists and works represented in the data, as well as styles, subjects, specific sizes and prices. In the end, I took a better look at the American artists represented, and what work can be viewed in the US.
+#I looked at the artists and works represented in the data, as well as styles, subjects, specific sizes and prices. In the end, I took a better look at the American artists represented, and what work can be viewed in the US.
 
 Some of the takeaways:
 
