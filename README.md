@@ -8,8 +8,8 @@ I looked at the artists and works represented in the data, as well as styles, su
 
 Some of the takeaways:
 
-- The most popular subject in the data overall was Portraits, while "Landscape art" was the most represented subject by American artists
-- The most represented painting style overall was Baroque, while it in the US was Impressionism
+- The overall most popular subject in the data was Portraits, while "Landscape art" was the most represented subject by American artists
+- The overall most widely represented painting style was Baroque, while it in the US museums was Impressionism
 - The very famous "The Last Supper" by Leonardo Da Vinci was one of the largest represented paintings
 - The most expensive picture at regular price was "The Luncheon" by Claude Monet
 - "Landscape art" was the most expensive subject on average followed by "Maritime art/Maritime"
