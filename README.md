@@ -2,7 +2,7 @@
 
 In this project, I used the data "Famous Paintings" downloaded from Kaggle (https://www.kaggle.com/datasets/mexwell/famous-paintings) to practise my SQL skills in MySQL. 
 
-Python was utilized to upload the data to the database in MySQL efficiently. See own deposit for code. 
+Python was utilized to upload the data to the database in MySQL efficiently. See https://github.com/ToriiX/SQL-Art_Paintings/blob/main/Upload%20data%20to%20database%20in%20MySQL%20using%20Python.ipynb for code. 
 
 I looked at the artists and works represented in the data, as well as styles, subjects, specific sizes and prices. In the end, I took a better look at the American artists represented, and what work can be viewed in the US.
 Please see https://github.com/ToriiX/SQL-Art_Paintings/blob/main/Famous_Paintings_project_SQL.sql for code.
